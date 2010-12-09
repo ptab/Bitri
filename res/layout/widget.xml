@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_widget"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/widget_background"
+	android:gravity="center"
+	android:orientation="horizontal"
+	android:padding="20dp">
+
+	<ImageView
+		android:id="@+id/widget_horario"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="20dp"
+		android:layout_centerVertical="true"/>
+		
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:padding="5dp"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="20dp"
+		android:gravity="center_vertical">
+
+		<ImageView
+			android:id="@+id/widget_img_next"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/widget_next" />
+
+		<TextView
+			android:id="@+id/widget_next_horario"
+			android:layout_alignTop="@id/widget_img_next"
+			android:layout_toRightOf="@id/widget_img_next"
+			style="@style/when" />
+
+		<TextView
+			android:id="@+id/widget_next_date"
+			android:layout_alignBottom="@id/widget_img_next"
+			android:layout_toRightOf="@id/widget_img_next"
+			style="@style/widget_date"/>
+	</RelativeLayout>
+
+</LinearLayout>

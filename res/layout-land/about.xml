@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="20dp">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:paddingLeft="30dp"
+		android:paddingRight="60dp"
+		android:gravity="center">
+
+		<TextView
+			android:layout_marginBottom="15dp"
+			android:text="@string/app_name"
+			android:textSize="20pt"
+			style="@style/text" />
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/clock" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_weight="1"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:paddingTop="30dp"
+		android:paddingBottom="30dp"
+		android:paddingRight="10dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:orientation="horizontal">
+			<TextView
+				android:text="@string/label_version"
+				android:layout_weight="1"
+				style="@style/date" />
+			<TextView
+				android:text="@string/app_version"
+				style="@style/value" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:orientation="horizontal">
+			<TextView
+				android:text="@string/label_author"
+				android:layout_weight="1"
+				style="@style/date" />
+			<TextView
+				android:text="@string/app_author"
+				style="@style/value" />
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:gravity="right"
+			android:autoLink="email"
+			android:text="@string/app_author_email"
+			style="@style/preferences" />
+		
+		<TextView
+			android:layout_weight="1"
+			android:gravity="bottom"
+			android:autoLink="web"
+			android:text="@string/tango_acknowledgement"
+			style="@style/acknowledgements" />
+
+		<TextView
+			android:gravity="bottom"
+			android:autoLink="web"
+			android:text="@string/tango_url"
+			style="@style/acknowledgements" />
+
+	</LinearLayout>
+</LinearLayout>

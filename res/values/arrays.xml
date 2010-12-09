@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="tarifas">
+		<item>Bi-horária</item>
+		<item>Tri-horária</item>
+	</string-array>
+	<string-array name="ciclos">
+		<item>Diário</item>
+		<item>Semanal</item>
+	</string-array>
+</resources>

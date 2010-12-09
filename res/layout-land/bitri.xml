@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp">
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		
+			<TextView
+				android:id="@+id/today"
+				android:layout_width="fill_parent"
+				android:layout_marginBottom="15dp"
+				android:gravity="center_horizontal"
+				style="@style/date" />
+
+			<ImageView
+				android:id="@+id/horario"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="25dp"
+				android:layout_centerHorizontal="true" />
+
+			<RelativeLayout
+				android:id="@+id/layout_periodo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="15dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:id="@+id/img_periodo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="15dp" />
+
+				<TextView
+					android:layout_alignTop="@id/img_periodo"
+					android:layout_toRightOf="@id/img_periodo"
+					android:text="@string/label_periodo"
+					style="@style/date" />
+
+				<TextView
+					android:id="@+id/periodo"
+					android:layout_alignBottom="@id/img_periodo"
+					android:layout_toRightOf="@id/img_periodo"
+					style="@style/text" />
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/layout_next"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="15dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:id="@+id/img_next"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="15dp"
+					android:src="@drawable/button_next" />
+
+				<TextView
+					android:layout_alignTop="@id/img_next"
+					android:layout_toRightOf="@id/img_next"
+					android:text="@string/label_next"
+					style="@style/date" />
+
+				<TextView
+					android:id="@+id/next_horario"
+					android:layout_alignBottom="@id/img_next"
+					android:layout_toRightOf="@id/img_next"
+					android:layout_marginRight="10dp"
+					style="@style/text" />
+
+				<TextView
+					android:id="@+id/next_change"
+					android:layout_alignBaseline="@id/next_horario"
+					android:layout_toRightOf="@id/next_horario"
+					style="@style/when" />
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="25dp"
+				android:orientation="horizontal"
+				android:gravity="center_vertical">
+
+				<TextView
+					android:layout_weight="1"
+					android:text="@string/label_tarifa"
+					style="@style/preferences" />
+
+				<Spinner
+					android:id="@+id/spinner_tarifa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:layout_gravity="right"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/prompt_tarifa" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical">
+
+				<TextView
+					android:text="@string/label_ciclo"
+					android:layout_weight="1"
+					style="@style/preferences" />
+
+				<Spinner
+					android:id="@+id/spinner_ciclo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:layout_gravity="right"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/prompt_ciclo" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

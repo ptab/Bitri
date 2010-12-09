@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="text" parent="@android:style/TextAppearance">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<style name="value" parent="@style/text">
+		<item name="android:textSize">9pt</item>
+	</style>
+	
+	<style name="when" parent="@style/text">
+		<item name="android:textSize">8pt</item>
+	</style>
+	
+	<style name="preferences" parent="@style/text">
+		<item name="android:textColor">@android:color/darker_gray</item>
+		<item name="android:textSize">7pt</item>
+	</style>
+	
+	<style name="date" parent="@style/text">
+		<item name="android:textSize">7pt</item>
+		<item name="android:textColor">@android:color/darker_gray</item>
+	</style>
+	
+	<style name="widget_date" parent="@style/text">
+		<item name="android:textSize">7pt</item>
+	</style>
+	
+	<style name="acknowledgements" parent="@style/date">
+		<item name="android:textSize">6pt</item>
+	</style>
+</resources>

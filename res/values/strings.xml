@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bitri</string>
+    <string name="app_version">1.1</string>
+    <string name="app_author">dashboard</string>
+    <string name="app_author_email">dashboard@tbrd.org</string>
+    
+    <string name="refresh">Actualizar</string>
+    <string name="about">Acerca</string>
+	
+	<string name="vazio">Vazio</string>
+	<string name="cheio">Cheio</string>
+	<string name="ponta">Ponta</string>
+	
+	<string name="today">Hoje</string>
+	<string name="tomorrow">Amanhã</string>
+	
+	<string name="summer">Verão</string>
+	<string name="winter">Inverno</string>
+	
+	<string name="label_next">Próximo horário</string>
+	<string name="label_periodo">Período</string>
+	<string name="label_tarifa">Tarifa:</string>
+	<string name="label_ciclo">Ciclo:</string>
+	
+	<string name="prompt_tarifa">Escolha uma tarifa</string>
+	<string name="prompt_ciclo">Escolha um ciclo</string>
+	
+	<string name="label_version">Versão:</string>
+	<string name="label_author">Escrito por:</string>
+	<string name="tango_acknowledgement">Ícones baseados no Tango Desktop Project</string>
+	<string name="tango_url">http://tango.freedesktop.org</string>
+</resources>
